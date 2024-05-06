@@ -1,0 +1,12 @@
+ALGORITHME PrixBilletCinema
+    AFFICHER "Veuillez saisir votre âge :"
+    LIRE age
+    SI age <= 12 ALORS
+        prix <- 10
+    SINON SI age >= 13 ET age <= 17 ALORS
+        prix <- 15
+    SINON
+        prix <- 20
+    FIN SI
+    AFFICHER "Le prix du billet de cinéma est de " + prix + " $."
+FIN ALGORITHME
